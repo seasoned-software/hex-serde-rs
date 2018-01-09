@@ -1,0 +1,18 @@
+[package]
+authors = ["Mathias Svensson <mathias@seasoned.software>"]
+categories = ["encoding"]
+description = "Integration between hex and serde"
+documentation = "http://docs.rs/hex-serde"
+homepage = "https://github.com/seasoned-software/hex-serde-rs"
+keywords = ["base64", "serde"]
+license = "MIT/Apache-2.0"
+name = "hex-serde"
+readme = "README.md"
+version = "0.1.0"
+
+[dependencies]
+hex = "0.3.1"
+serde = "1.0.27"
+
+[dev-dependencies]
+serde_derive = "1.0.27"
