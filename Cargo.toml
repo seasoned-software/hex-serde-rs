@@ -12,7 +12,7 @@ version = "0.1.0"
 
 [dependencies]
 hex = "0.3.1"
-serde = "1.0.27"
+serde = "1.0.29"
 
 [dev-dependencies]
-serde_derive = "1.0.27"
+serde_derive = "1.0.29"
