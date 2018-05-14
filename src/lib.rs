@@ -22,11 +22,11 @@
 extern crate hex;
 extern crate serde;
 
+use hex::{FromHex, FromHexError, ToHex};
+use serde::de::Visitor;
+use serde::{de, Deserializer, Serializer};
 use std::fmt;
 use std::marker::PhantomData;
-use hex::{FromHex, FromHexError, ToHex};
-use serde::{de, Deserializer, Serializer};
-use serde::de::Visitor;
 
 /// A serializer that first encodes the argument as a hex-string
 pub fn serialize<T, S>(value: &T, serializer: S) -> Result<S::Ok, S::Error>
