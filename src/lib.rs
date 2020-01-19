@@ -34,8 +34,7 @@ where
     S: Serializer,
     T: AsRef<[u8]>,
 {
-    let mut output = String::new();
-    value.write_hex(&mut output).expect("Failed to write hex");
+    let output: String = value.encode_hex();
     serializer.serialize_str(&output)
 }
 
